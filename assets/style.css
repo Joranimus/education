@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+.about-us {
+    padding: 80px 0;
+
+}
+.images-item {
+    display: inline-block;
+    margin: 70px 5% 0;
+}
+._text-c {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: auto;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    color: #4c505d;
+    padding: 0 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #4c505d;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.block2 {
+    background-color: #00d089;
+    padding: 90px 0;
+}
+
+.name {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    left: calc(100% + 35px);
+    top: 0;
+}
+.name::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 20px) ;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/img/quote.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.photo-box {
+    margin: 0 auto;
+    width: 140px;
+    position: relative;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.text {
+    padding: 30px 10px 0;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1441px) {
+    .container{
+        max-width: 1440px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .subtitle{
+        font-size: 25px;
+    }
+    .text{
+        font-size: 27px;
+    }
+    .name{
+        font-size: 35px;
+        left: calc(120% + 35px);
+    }
+    .name::after{
+        width: 130px;
+        height: 130px;
+        top: calc(100% + 20px) ;
+    }
+    .photo-box img {
+        width: 120%;
+        height: 120%;
+    }
+
+}
+
+@media screen  and (max-width: 900px) {
+    .photo-box {
+        width: 95px;
+        /*margin: 0 30%;*/
+    }
+    .name{
+        font-size: 17px;
+        left: calc(100% + 20px);
+    }
+    .name::after{
+        width: 75px;
+        height: 75px;
+        top: calc(100% + 20px) ;
+    }
+    .block2{
+        padding: 50px 0;
+    }
+    .block1{
+        padding: 50px 0;
+    }
+}
+
+@media screen  and (max-width: 750px) {
+    .title{
+        font-size: 20px;
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 17px;
+    }
+    .photo-box {
+        width: 90px;
+        margin: 0 30%;
+    }
+    .name{
+        font-size: 18px;
+        left: calc(100% + 20px);
+    }
+    .name::after{
+        width: 80px;
+        height: 80px;
+        top: calc(100% + 20px) ;
+    }
+    .block2{
+        padding: 50px 0;
+    }
+    .block1{
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .photo-box {
+        margin: 0 20%;
+    }
+    .images-item {
+        margin: 40px 5% 0;
+    }
+}
+
+/*@media screen and (max-width: 500px) {
+    .photo-box {
+        width: 90px;
+    }
+    .name{
+        font-size: 18px;
+        left: calc(100% + 25px);
+    }
+    .name::after{
+        width: 80px;
+        height: 80px;
+        top: calc(100% + 20px) ;
+    }
+    .block2{
+        padding: 50px 0;
+    }
+}*/
+
+
+/*@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .photo-box {
+        width: 80px;
+    }
+  }*/
+
